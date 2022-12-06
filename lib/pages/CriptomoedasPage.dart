@@ -19,7 +19,9 @@ class _CriptomoedasPageState extends State<CriptomoedasPage> {
   appBarDinamica() {
     if (selecionadas.isEmpty) {
       return AppBar(
+        centerTitle: true,
         title: Text('Cripto Moedas'),
+        backgroundColor: Color.fromARGB(255, 5, 6, 92),
       );
     } else {
       return AppBar(
@@ -45,11 +47,11 @@ class _CriptomoedasPageState extends State<CriptomoedasPage> {
 
   detalhes(Moeda moeda) {
     Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (_) => DetailMoedas(moeda: moeda),
-        ),
-      );
+      context,
+      MaterialPageRoute(
+        builder: (_) => DetailMoedas(moeda: moeda),
+      ),
+    );
   }
 
   @override
