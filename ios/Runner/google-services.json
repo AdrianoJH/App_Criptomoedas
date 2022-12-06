@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "354704766642",
+    "project_id": "app-criptomoedas",
+    "storage_bucket": "app-criptomoedas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354704766642:android:47a6cf016e64cd2eae3bab",
+        "android_client_info": {
+          "package_name": "com.example.app_criptomoedas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354704766642-e86ei1c59st6br0ipn49ivdvighilpek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV-p5v0dnDLSDaLr-q_86OLzyzjdp7EnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354704766642-e86ei1c59st6br0ipn49ivdvighilpek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

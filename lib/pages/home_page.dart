@@ -1,3 +1,4 @@
+
 import 'package:app_criptomoedas/pages/CriptomoedasPage.dart';
 import 'package:flutter/material.dart';
 import 'favoritasPage.dart';
@@ -28,13 +29,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(
+      body: PageView( 
         controller: pc,
         children: [
           CriptomoedasPage(),
-          FavoritasPage(),
+          FavoritasPage(), 
         ],
-        onPageChanged: setPaginaAtual,
+        onPageChanged: setPaginaAtual, 
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: paginaAtual,
