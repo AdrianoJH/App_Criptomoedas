@@ -1,6 +1,7 @@
 
 import 'package:app_criptomoedas/pages/CriptomoedasPage.dart';
 import 'package:flutter/material.dart';
+import 'configuracoes_page.dart';
 import 'favoritasPage.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,6 +35,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           CriptomoedasPage(),
           FavoritasPage(), 
+          ConfiguracoesPage(),
         ],
         onPageChanged: setPaginaAtual, 
       ),
@@ -42,6 +44,8 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Todas'),
           BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Favoritas'),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Conta'),
+
         ],
         onTap: (pagina) {
           pc.animateToPage(

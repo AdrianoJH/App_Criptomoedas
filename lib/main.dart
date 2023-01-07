@@ -1,4 +1,5 @@
 import 'package:app_criptomoedas/config/app_settings.dart';
+import 'package:app_criptomoedas/repositories/conta_repository.dart';
 import 'package:provider/provider.dart';
 import 'package:app_criptomoedas/repositories/favoritas_repository.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +13,7 @@ void main() async {
   runApp(
     MultiProvider(
       providers: [
+        ChangeNotifierProvider(create: (context) => ContaRepository()),
         ChangeNotifierProvider(create: (context) => FavoritasRepository()),
         ChangeNotifierProvider(create: (context) => AppSettings()),
       ],
